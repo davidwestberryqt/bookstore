@@ -7,6 +7,7 @@ let bodyParser = require('body-parser');
 let port = 8080;
 let book = require('./app/routes/book');
 let config = require('config'); //we load the db location from the JSON files
+console.log(config);
 //db options
 let options = { 
 				server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
